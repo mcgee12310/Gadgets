@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <link rel="stylesheet" href="/web.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Product</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div id="pokemonName-input">
+        <input type="text" name="" id="pokemonName" placeholder="Enter pokemon's name">
+        <button onclick="fetchData()">Find Pokemon</button>
+    </div>
+
+    <div id="pokemon-card">
+        
+        <div id="pokemon-image">
+            <img src="" id="pokemonIMG">
+            <h2 id="pokemon-name">Name</h2>
+        </div>
+
+        <div class="pokemon-info">
+            
+            <h4 style="text-align: left;">Type(s):</h4>
+            <div id="pokemon-types"></div>
+
+            <hr style="border: 2px solid black; border-radius: 5px; margin-top: 5px; margin-bottom: 5px;">
+
+            <h4 style="text-align: left;">Stats:</h4>
+            <p id="pokemon-hp"></p>
+            <p id="pokemon-atk"></p>
+            <p id="pokemon-def"></p>
+            <p id="pokemon-speed"></p>
+        </div>
+        
+        
+    </div><br>
+
+    <footer class="footer" role="contentinfo" itemscope itemtype="http://schema.org/Person">
+        <div class="footer-left" itemscope itemtype="http://schema.org/Person" class="h-card">
+            <img src="/images/mcgee.jfif" alt="Profile Picture" itemprop="image" class="u-logo logo" />
+            <h3 itemprop="name" class="p-name">Nguyen Khac Hieu</h3>
+            <p class="p-job-title" itemprop="jobTitle">Student</p>
+            <nav aria-label="Footer Navigation">
+                <p class="footer-links">
+                    <a href="/home.html" itemprop="url" class="link-1">Home</a>
+                    <a href="https://github.com/mcgee12310" itemprop="url">GitHub</a>
+                </p>
+            </nav>
+            <p class="footer-name">© 2024 Nguyen Khac Hieu</p>
+        </div>
+    
+        <div class="footer-center">
+            <div itemscope itemtype="http://schema.org/PostalAddress" class="p-address">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <p>
+                    <span itemprop="streetAddress" class="p-street-address">123 This is a Street</span>,
+                    <span itemprop="addressLocality" class="p-locality">A Locality</span>,
+                    <span itemprop="addressRegion" class="p-region">Region state</span>,
+                    <span itemprop="postalCode" class="p-postal-code">12345</span>
+                </p>
+            </div>
+            <div>
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <p itemprop="telephone" class="p-tel">+1 234567890</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <p><a href="mailto:myname@mail.com" itemprop="email" class="u-email">myname@mail.com</a></p>
+            </div>
+        </div>
+    
+        <div class="footer-right">
+            <p class="footer-about">
+                <span>About Me</span>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore ducimus assumenda possimus? Reprehenderit, voluptates consequuntur. Illum tempore reiciendis incidunt velit ea non voluptates iure, corporis, repudiandae sequi totam dolorem iste.
+            </p>
+            <div class="footer-socials">
+                <a href="#" rel="me" aria-label="LinkedIn" itemprop="sameAs" class="u-url"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" rel="me" aria-label="GitHub" itemprop="sameAs" class="u-url"><i class="fa-brands fa-github"></i></a>
+                <a href="#" rel="me" aria-label="Twitter" itemprop="sameAs" class="u-url"><i class="fa-brands fa-x-twitter"></i></a>
+               <a href="#" rel="me" aria-label="Mastodon" itemprop="sameAs" class="u-url"><i class="fa-brands fa-mastodon"></i></a>
+               <a href="#" rel="me" aria-label="Threads" itemprop="sameAs" class="u-url"><i class="fa-brands fa-threads"></i></a>
+               <a href="#" rel="me" aria-label="Facebook" itemprop="sameAs" class="u-url"><i class="fa-brands fa-facebook"></i></a>
+               <a href="#" rel="me" aria-label="Instagram" itemprop="sameAs" class="u-url"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    
+
+    
+    <script src="pokemon.js"></script>
+</body>
+</html>

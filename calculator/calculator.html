@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <link rel="stylesheet" href="/web.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Product</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div id="calculator">
+        <input id="displaycalculator" readonly>
+        <div id="keyscalculator">
+            <button onclick="appendToDisplay('+')" class="op">+</button> 
+            <button onclick="appendToDisplay('7')">7</button> 
+            <button onclick="appendToDisplay('8')">8</button> 
+            <button onclick="appendToDisplay('9')">9</button> 
+            <button onclick="appendToDisplay('-')" class="op">-</button> 
+            <button onclick="appendToDisplay('4')">4</button> 
+            <button onclick="appendToDisplay('5')">5</button> 
+            <button onclick="appendToDisplay('6')">6</button> 
+            <button onclick="appendToDisplay('*')" class="op">*</button> 
+            <button onclick="appendToDisplay('1')">1</button> 
+            <button onclick="appendToDisplay('2')">2</button> 
+            <button onclick="appendToDisplay('3')">3</button> 
+            <button onclick="appendToDisplay('/')" class="op">/</button> 
+            <button onclick="appendToDisplay('0')">0</button> 
+            <button onclick="appendToDisplay('.')">.</button> 
+            <button onclick="calculate()">=</button>
+            <button onclick="clearDisplay()" class="op">C</button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="icon">
+            <a href="home.html"><i class="fa-solid fa-house fa-2x"></i></a>
+            <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube fa-2x"></i></a>
+            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook fa-2x"></i></a>
+        </div>
+       
+            author: Hieu Nguyen Khac <br>
+            &copy; copyright reserved <br>
+        
+    </footer>
+
+    
+    <script src="calculator.js"></script>
+</body>
+</html>
