@@ -40,5 +40,8 @@ function playGame(playerChoice){
             computerScore++;
             computerscoreDisplay.textContent = computerScore;
             break;
+        case "IT'S A TIE!":
+            resultDisplay.style.color="black";
+            break;
     }
 }

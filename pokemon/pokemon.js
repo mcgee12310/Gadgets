@@ -21,7 +21,7 @@ async function fetchData(){
         document.getElementById("pokemon-atk").textContent = "ATK: " + data.stats[1].base_stat + `⚔️`;
         document.getElementById("pokemon-def").textContent = "DEF: " + data.stats[2].base_stat +`🛡️`;
         document.getElementById("pokemon-speed").textContent = "SPD: " + data.stats[5].base_stat +`💨`;
-        document.getElementById("pokemon-card").style.display = "flex";
+        document.getElementById("pokemon-card").style.visibility = "visible";
         
         pokemon_types = document.getElementById("pokemon-types");
         while (pokemon_types.firstChild !== null) {

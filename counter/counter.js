@@ -2,7 +2,7 @@
 const decrease = document.getElementById("decrease"); 
 const reset = document.getElementById("reset"); 
 const increase = document.getElementById("increase"); 
-const countLabel = document.getElementById("a7"); 
+const countLabel = document.getElementById("counter-label"); 
 let count = 0;
 increase.onclick= function(){
     count++;

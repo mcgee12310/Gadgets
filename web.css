@@ -15,16 +15,61 @@ body{
 }
 /* Header style */
 header {
-    background-color: #4CAF50;
-    color: white;
-    text-align: center;
-    position: fixed;
+	background: url('http://www.autodatz.com/wp-content/uploads/2017/05/Old-Car-Wallpapers-Hd-36-with-Old-Car-Wallpapers-Hd.jpg');
+	text-align: center;
+	width: 100%;
+	height: auto;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+	overflow: hidden;
+	border-radius: 0 0 85% 85% / 30%;
 }
+header img{
+    border-radius: 5px;
+}
+header .overlay{
+	width: 100%;
+	height: 100%;
+	padding: 50px;
+	color: #FFF;
+	text-shadow: 1px 1px 1px #333;
+  background-image: linear-gradient( 135deg, #9f05ff69 10%, #fd5e086b 100%);
+	
+}
+
+h1 {
+	font-family: 'Dancing Script', cursive;
+	font-size: 80px;
+	margin-bottom: 30px;
+}
+
+h3, p {
+	font-family: 'Open Sans', sans-serif;
+	margin-bottom: 10px;
+}
+
+button {
+	border: none;
+	outline: none;
+	padding: 10px 20px;
+	border-radius: 50px;
+	color: #333;
+	background: #fff;
+	margin-bottom: 50px;
+	box-shadow: 0 3px 20px 0 #0000003b;
+}
+button:hover{
+	cursor: pointer;
+}
+
+/* Nav bar */
 .navbar {
     color: white;
     text-align: center;
     position: fixed;
     z-index: 2;
+    height: 50px;
 }
 .navbar ul{
     list-style-type: none;
@@ -36,6 +81,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
+    height: 50px;
 }
 .navbar li {
     float: left;
@@ -49,7 +95,7 @@ header {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 10px 12px;
     text-decoration: none;
 }
 
@@ -250,32 +296,73 @@ header {
     border: 5px solid;
     border-radius: 10px;
     height: auto;
-    width: 400px;
+    width: 600px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: self-start;
     flex-wrap: wrap;
     column-gap: 0px;
-    row-gap: 15px;
-    padding: 20px 10px;
+    row-gap: 35px;
+    padding: 30px 10px;
 }
 .flexbox{
-    width: 100px;
-    height: 100px;
-    font-size: 1em;
+    width: 150px;
+    height: 150px;
     text-align: center;
+    align-items: center;
     border-radius: 10px;
-    background-color: gray;
 }
-.flexbox_container .flexbox a {
+.flexbox img{
+    width: 100px;
+    height: auto;
+}
+.flexbox_container a {
     display: block;
     color: white;
     text-align: center;
     text-decoration: none;
     margin: auto;
     size: 100px 100px;
-    align-self: start;;
+    align-items: center;
+}
+#flexbox1 img{
+    height: 150px;
+    width: auto;
+}
+#flexbox2 img{
+    height: 150px;
+    width: auto;
+}
+#flexbox3 img{
+    width: 150px;
+}
+#flexbox4 img{
+    height: 150px;
+    width: auto;
+}
+#flexbox5 img{
+    width: 150px;
+    border-radius: 10px;
+}
+#flexbox6 img{
+    width: 150px;
+    border-radius: 10px;
+}
+#flexbox7 img{
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+}
+#flexbox8 img{
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+}
+#flexbox9 img{
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
 }
 
 /* Icon */
@@ -339,65 +426,56 @@ input[type=text] {
     box-sizing: border-box;
     border: 2px solid #ccc;
     border-radius: 4px;
-    font-size: 16px;
+    font-size: 40px;
     background-color: white;
     text-align: left;
     padding: 12px 20px 12px 40px;
     height: 40px;
 }
 
-select{
-    font-size: 0.75em;
-}
-
-option{
-    font-size: 0.75em;
-}
-
-
-#a9{
-    display: block;
+/* Counter*/
+#counter{
+    margin: auto;
+    margin-top: 90px;
+    margin-bottom: 200px;
+    width: 800px;
+    height: 500px;
     text-align: center;
-}
-#a9 label{
-    display: block;
-    font-size: 10em;
-    text-align: center;
-    font-weight: bold;
-}
-#a9 button{
-    background-color: gray;
-    color: aqua;
-    display: inline-block;
-    font-size: 2em;
-    text-align: center;
+    border: solid;
     border-radius: 15px;
 }
-#a24_number{
-    border: solid;
-    border-radius: 5px;
+#counter-label{
+    font-size: 13em;
+    font-weight: bold;
     text-align: center;
-    font-size: 1.3em;
 }
-#a24_form{
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 5px 5px 5px hsl(0, 3%, 16%);
+#counter button{
+    width: 180px;
+    height: 80px;
     text-align: center;
-    max-width: 600px;
-    margin-top: 70px;
-    margin-left: auto;
-    margin-right: auto;
+    font-size: 1.2em;
 }
+#decrease{
+    background-color: red;
+}
+#reset{
+    background-color: gray;
+}
+#increase{
+    background-color: green;
+}
+
+/* Dice */
 #dice_roller{
     background-color: white;
     border-radius: 5px;
     box-shadow: 5px 5px 5px hsl(0, 3%, 16%);
     text-align: center;
     max-width: 90%;
+    min-height: 500px;
     margin: auto;
-    margin-top: 70px;
-    margin-bottom: 90px;
+    margin-top: 90px;
+    margin-bottom: 190px;
 }
 #dice_input{
     border: solid;
@@ -410,8 +488,10 @@ option{
     width: 250px;
     height: auto;
     margin: 10px;
+    border-radius: 20px;
 }
 
+/* Clock */
 #clock-container{ 
     display: flex; 
     justify-content: center; 
@@ -424,7 +504,7 @@ option{
     font-size: 6.5rem;
     font-weight: bold;
     text-align: center;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px); 
     background-color: beige;
     width: 100%;
 }
@@ -432,6 +512,7 @@ option{
 #container{
     display: flex;
     flex-direction: column; align-items: center; padding: 30px; border: 5px solid;
+    height: 30vh;
     border-radius: 50px;
     background-color: white;
     margin-bottom: 80px;
@@ -472,22 +553,23 @@ option{
     background-color: hsl(205, 90%, 50%);
 }
 
+/* Calculator */
 #calculator{
     font-family: Arial, sans-serif;
     background-color: hsl(0, 0%, 15%);
     border-radius: 15px;
-    max-height:500px;
-    max-width: 400px;
+    height: 700px;
+    width: 500px;
     overflow: hidden;
     margin: auto;
     margin-top: 80px;
     margin-bottom: 80px;
 }
 #displaycalculator{
-    max-width: 380px;
+    width: 380px;
     width: 100%;
     padding: 10px;
-    font-size: 2em;
+    font-size: 3em;
     text-align: right; 
     border: none;
     background-color: hsl(0, 0%, 20%);
@@ -500,8 +582,8 @@ option{
     padding: 15px;
 }
 #keyscalculator button{
-    width: 70px; 
-    height: 70px; 
+    width: 100px; 
+    height: 100px; 
     border-radius: 50px; 
     border: none;
     background-color: hsl(0, 0%, 30%);
@@ -514,41 +596,60 @@ option{
     background-color: hsl(35, 100%, 55%);
 }
 
-#myBox{
-    background-color: lightgreen;
-    width: 300px;
-    height: 300px; 
-    font-size: 4rem;
-    font-weight: bold; 
-    display: flex;
-    justify-content: center;
-    align-items: center; 
+/* Temp */
+#a24_number{
+    border: solid;
+    border-radius: 5px;
     text-align: center;
-    position: relative;
+    font-size: 1em;
 }
-.enabled{
-    background-color: hsl(204, 100%, 50%); color: white;
+#a24_form {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px hsl(0, 3%, 16%);
+    text-align: center;
+    max-width: 900px;
+    height: 630px;
+    padding: 10px;
+    margin-top: 70px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
 }
-.disabled{
-    background-color: hsl(204, 23%, 17%); color: white;
+#a24_form input{
+    margin: 20px;
+    font-size: 2em;
 }
-.hover{
-    background-color: gray; color: white;
+#a24_form label{
+    margin: 30px;
+    font-size: 1.5em;
+}
+#a24_form button{
+    width: 200px;
+    height: 60px;
+    font-size: 1.5em;
+}
+#a24_result{
+    font-size: 2em;
+    margin: 10px;
 }
 
+/* Rock-Paper-Scissors */ 
 #Rock-Paper-Scissors{
     max-width: 100%;
     align-items: center;
     text-align: center;
-    margin-top: 60px;
-    margin-bottom: 20px;
+    margin-top: 40px;
+    margin-bottom: 100px;
 }
 .choices{
-    margin-bottom: 30px;
+    margin: 30px;
 }
 .choices button{
     font-size: 7rem;
-    min-width: 160px; margin: 0 10px;
+    min-width: 160px; 
+    min-height: 160px;
+    margin: 0 10px;
     border-radius: 250px;
     background-color: hsl(200, 100%, 50%); cursor: pointer;
     transition: background-color 0.5s ease;
@@ -557,11 +658,14 @@ option{
     background-color: hsl(200, 100%, 70%);
 }
 #playerDisplay, #computerDisplay{
-    font-size: 2.5rem;
+    font-size: 4rem;
 }
 #resultDisplay{
-    font-size: 5rem;
+    font-size: 6rem;
     margin: 20px;
+}
+.scoreDisplay{
+    font-size: 2.5rem;
 }
 #playerscoreDisplay{
     color: green;
@@ -574,9 +678,15 @@ option{
 #pokemonName-input{
     margin-top: 10px;
     text-align: center;
+    height: 60px;
 }
 #pokemonName-input input{
     margin-top: 70px;
+    height: 60px;
+}
+#pokemonName-input button{
+    height: 60px;
+    font-size: 1em;
 }
 /* Pokémon Card */
 #pokemon-card {
@@ -588,8 +698,9 @@ option{
     overflow: hidden;
     text-align: center;
     margin: auto;
-    margin-top: 20px;
-    display: none;
+    margin-top: 100px;
+    display: flex;
+    visibility: hidden;
 }
 
 /* Pokémon Image */
@@ -612,7 +723,7 @@ option{
 
 /* Pokémon Info */
 .pokemon-info {
-    padding: 20px;
+    padding: 10px;
     width: 200px;
     background-color: #f8f8f8;
 }
@@ -641,15 +752,17 @@ option{
 #weatherForecast{
     font-family: Arial, sans-serif; 
     margin-top: 60px;
+    margin-bottom: 190px;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .weatherForm .cityInput{
-    margin: 20px;
+    margin: 10px;
     align-items: center;
     text-align: center;
-    height: 40px;
+    height: 60px;
 }
 .cityInput{
     box-sizing: border-box;
@@ -658,8 +771,8 @@ option{
     font-size: 16px;
     background-color: white;
     text-align: left;
-    padding: 12px 20px 12px 40px;
-    height: 40px;
+    padding: 20px 20px 20px 20px;
+    height: 60px;
 }
 button[type="submit"]{
     padding: 10px 10px; 
@@ -671,16 +784,17 @@ button[type="submit"]{
     border-radius: 5px;
     cursor: pointer;
     margin-top: auto;
+    height: 60px;
 }
 button[type="submit"]:hover{
     background-color: hsl(122, 39%, 40%);
 }
 .weather-card{
     background: linear-gradient(180deg, hsl(210, 100%, 75%), hsl(40,100%,50%));
-    padding: 50px;
+    padding: 30px;
     box-shadow: 2px 2px 5px ☐hsla(0, 0%, 0%, 0.5);
     width: 75%;
-    height: auto;
+    height: 90vh;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -688,7 +802,7 @@ button[type="submit"]:hover{
     margin-bottom: 230px;
 }
 #cityDisplay, #tempDisplay{
-    font-size: 3.5rem;
+    font-size: 4.5rem;
     font-weight: bold;
     color: hsla(0, 0%, 0%, 0.75);
     margin-bottom: 25px;
@@ -696,12 +810,13 @@ button[type="submit"]:hover{
 #humidityDisplay{
     font-weight: bold;
     margin-bottom: 25px;
+    font-size: 3rem;
 }
 #descDisplay{
     font-style: italic;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 #weatherEmoji{
-    font-size: 4rem;
+    font-size: 6rem;
 }
